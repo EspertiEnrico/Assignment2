@@ -5,7 +5,7 @@
 
 <module name = "Checker">
     <module name="FileLength"></module>
-    <module name="LineLength"></module>
+    <module name="LineLength"><property name="max" value="120"/></module>
     <module name="FileTabCharacter"></module>
     <module name="Header">
         <property name="header" value="////////////////////////////////////////////////////////////////////\n// ENRICO ESPERTI 2075534\n// DAVIDE COLABOVE 2084622\n////////////////////////////////////////////////////////////////////"/>
