@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+          "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+          "https://checkstyle.org/dtds/configuration_1_3.dtd">
+
+<module name = "Checker">
+    <module name="FileLength"></module>
+    <module name="LineLength"></module>
+    <module name="FileTabCharacter"></module>
+    <module name="Header">
+        <property name="header" value="////////////////////////////////////////////////////////////////////\n// ENRICO ESPERTI 2075534\n// DAVIDE COLABOVE 2084622\n////////////////////////////////////////////////////////////////////"/>
+    </module>
+    <module name="TreeWalker">
+        <module name="BooleanExpressionComplexity"></module>
+        <module name="CyclomaticComplexity"></module>
+        <module name="MethodLength"></module>
+        <module name="EmptyCatchBlock"></module>
+        <module name="AvoidStarImport"></module>
+        <module name="IllegalImport"></module>
+        <module name="NeedBraces"></module>
+    </module>
+</module>
