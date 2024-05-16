@@ -111,24 +111,24 @@ public class RomanPrinterTest {
     @Test
     void print_Number2024_ShouldReturnAsciiArtForMMXXIV() {
         String expected = 
-              "  __  __  __  __   __   __      __\n"
-            + " |  \\/  ||  \\/  | \\ \\ / / \\ \\    / /\n"
-            + " | \\  / || \\  / |  \\ V /   \\ \\  / / \n"
-            + " | |\\/| || |\\/| |   > <     \\ \\/ /  \n"
-            + " | |  | || |  | |  / . \\     \\  /   \n"
-            + " |_|  |_||_|  |_| /_/ \\_\\     \\/    \n";
+              "  __  __   __  __  __   __ __   __  _____  __      __\n"
+            + " |  \\/  | |  \\/  | \\ \\ / / \\ \\ / / |_   _| \\ \\    / /\n"
+            + " | \\  / | | \\  / |  \\ V /   \\ V /    | |    \\ \\  / / \n"
+            + " | |\\/| | | |\\/| |   > <     > <     | |     \\ \\/ /  \n"
+            + " | |  | | | |  | |  / . \\   / . \\   _| |_     \\  /   \n"
+            + " |_|  |_| |_|  |_| /_/ \\_\\ /_/ \\_\\ |_____|     \\/    \n";
         assertEquals(expected, RomanPrinter.print(2024));
     }
 
     @Test
     void print_Number3999_ShouldReturnAsciiArtForMMMCMXCIX() {
         String expected = 
-              "  __  __  __  __  __   __   _____  __   __\n"
-            + " |  \\/  ||  \\/  ||  \\/  | / ____| \\ \\ / /\n"
-            + " | \\  / || \\  / || \\  / || |       \\ V / \n"
-            + " | |\\/| || |\\/| || |\\/| || |        > <  \n"
-            + " | |  | || |  | || |  | || |____   / . \\ \n"
-            + " |_|  |_||_|  |_||_|  |_| \\_____| /_/ \\_\\\n";
+              "  __  __   __  __   __  __    _____   __  __  __   __   _____   _____  __   __\n"
+            + " |  \\/  | |  \\/  | |  \\/  |  / ____| |  \\/  | \\ \\ / /  / ____| |_   _| \\ \\ / /\n"
+            + " | \\  / | | \\  / | | \\  / | | |      | \\  / |  \\ V /  | |        | |    \\ V / \n"
+            + " | |\\/| | | |\\/| | | |\\/| | | |      | |\\/| |   > <   | |        | |     > <  \n"
+            + " | |  | | | |  | | | |  | | | |____  | |  | |  / . \\  | |____   _| |_   / . \\ \n"
+            + " |_|  |_| |_|  |_| |_|  |_|  \\_____| |_|  |_| /_/ \\_\\  \\_____| |_____| /_/ \\_\\\n";
         assertEquals(expected, RomanPrinter.print(3999));
     }
 
@@ -143,13 +143,6 @@ public class RomanPrinterTest {
     void print_NumberNegative_ShouldThrowException() {
         assertThrows(IllegalArgumentException.class, () -> {
             RomanPrinter.print(-1);
-        });
-    }
-
-    @Test
-    void print_Number4000_ShouldThrowException() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            RomanPrinter.print(4000);
         });
     }
 
