@@ -27,6 +27,7 @@ public class IntegerToRoman {
     }
 
     public final static String convert(int n) {
+        if(n<=0) throw new IllegalArgumentException("Il numero deve essere maggiore di zero");
         int i=simboli.floorKey(n);
         if (n==i) {
             return simboli.get(n);
