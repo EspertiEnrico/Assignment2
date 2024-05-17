@@ -1,2 +1,1 @@
-# CODE COVERAGE
-[![Coverage Status](https://coveralls.io/repos/github/EspertiEnrico/Assignment2/badge.svg?branch=develop)](https://coveralls.io/github/EspertiEnrico/Assignment2?branch=develop)
+[![Code coverage with Jacoco](https://github.com/EnricoEsperti/Assignment2/actions/workflows/codecoverage.yml/badge.svg)](https://github.com/EnricoEsperti/Assignment2/actions/workflows/codecoverage.yml)
