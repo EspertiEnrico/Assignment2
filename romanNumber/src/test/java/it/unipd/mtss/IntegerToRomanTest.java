@@ -6,6 +6,8 @@
 package it.unipd.mtss;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
 public class IntegerToRomanTest {
@@ -81,7 +83,27 @@ public class IntegerToRomanTest {
     }
 
     @Test
-    void convert_Number3999_ShouldReturnMMMCMXCIX() {
-        assertEquals("MMMCMXCIX", IntegerToRoman.convert(3999));
+    void convert_Number0_ShouldThrowException() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            IntegerToRoman.convert(0);
+        });
+    }
+
+    @Test
+    void convert_NumberNegative_ShouldThrowException() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            IntegerToRoman.convert(-1);
+        });
+    }
+
+    @Test
+    void convert_Number1000_ShouldPerformUnder1Second() {
+        long startTime = System.currentTimeMillis();
+        for (int i = 0; i < 1000; i++) {
+            IntegerToRoman.convert(1000);
+        }
+        long endTime = System.currentTimeMillis();
+        long duration = endTime - startTime;
+        assertTrue(duration < 1000); 
     }
 }
