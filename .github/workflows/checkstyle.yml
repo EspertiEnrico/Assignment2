@@ -2,15 +2,13 @@ name: Maven Checkstyle
 
 on:
   push:
-    branches: [ "develop" ]
+    branches: [ '**' ]
   pull_request:
-    branches: [ "develop" ]
+    branches: [ '**' ]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 17
