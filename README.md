@@ -1,1 +1,1 @@
-[![Code coverage with Jacoco](https://github.com/EnricoEsperti/Assignment2/actions/workflows/codecoverage.yml/badge.svg)](https://github.com/EnricoEsperti/Assignment2/actions/workflows/codecoverage.yml)
+[![Code coverage with Jacoco](https://github.com/EspertiEnrico/Assignment2/actions/workflows/codecoverage.yml/badge.svg)](https://github.com/EspertiEnrico/Assignment2/actions/workflows/codecoverage.yml)
